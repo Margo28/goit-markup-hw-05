@@ -322,12 +322,45 @@
           </li>
         </ul>
       </div>
+      <div>
+        <h3 class="join">Подпишитесь на рассылку</h3>
+        <form>
+          <div class="subscribe">
+            <input type="email" name="email" placeholder="E-mail">
+          </div>
+
+          <button type="submit" class="primary-button1">Подписаться</button>
+        </form>
+      </div>
     </div>
     <div class="backdrop is-hidden " data-modal>
       <div class="modal">
         <button class="close-button " data-modal-close>
           <img src="./images/close.svg" alt="" width="11" height="11">
         </button>
+        <form class="form">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="form-group">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel">
+          </div>
+          <div class="form-group">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail">
+          </div>
+          <div class="form-group">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="agree" id="agree">
+            <label for="agree">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
