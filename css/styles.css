@@ -242,6 +242,7 @@ h1{
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
+    height: 50px;
     text-align: center;
     
     font-weight: bold;
@@ -548,7 +549,7 @@ h1{
 
 .social{
     margin-left: 69px;
-    
+    margin-right: 93px;
 }
 
 .social .list-social{
@@ -594,6 +595,61 @@ h1{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color)
+}
+
+.subscribe{
+    display:inline-flex;
+    
+}
+
+.subscribe input{
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 12px;
+   
+}
+
+.subscribe input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.primary-button1{
+    display: inline-flex;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+    background-color: var(--accent-color);
+    text-decoration: none ;
+    border: transparent;
+    
+     
+
+}
+
+.primary-button1::after{
+    content: "";
+    padding: 13px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/iconsend.svg);
+    margin-left: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 }
 
 .page-footer{ 
@@ -783,13 +839,7 @@ h1{
     
 }
 
-
-
-      
-    
-
-
-
+/* Модальное окно */
 .backdrop{
     position: fixed;
     top: 0;
@@ -808,11 +858,19 @@ h1{
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 40px;
     transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
-    background-color: #FFFFFF; 
-     
+    background-color: #FFFFFF;    
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .close-button{
@@ -829,3 +887,10 @@ h1{
     background: #FFFFFF;
 }
 
+textarea{
+    resize: none;
+}
+
+.form{
+   
+}
